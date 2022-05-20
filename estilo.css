@@ -1,0 +1,6 @@
+ul#guias{display :none;}
+ul#guias li {
+    display: block;
+}
+
+
