@@ -8,117 +8,77 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  
     <header>
+        <nav>
+            <p>Menu</p>
+        </nav>
         <a href="index.html" rel="prev" target="_self">
-            <h1>TRANSVERSO</h1> 
+            <h1><span id="logo1">Trans</span><span id="logo2">verso</span></h1>
         </a>
     </header>
 
-    <div id="doc" onclick="fAbreGuias1()"><h2>Documentos pessoais<input type="checkbox" name="check" id="check"></h2></div>
-    <ul id="conteudo">
-        <li>Certidão de nascimento <input type="checkbox" name="check" id="check"></li>
-        <li>Rg e CPF<input type="checkbox" name="check" id="check"></li>
-        <li>Comprovante de residência<input type="checkbox" name="check" id="check"></li>
-        <li>Título de eleitor<input type="checkbox" name="check" id="check"></li>
-        <li>Certidão de casamento<input type="checkbox" name="check" id="check"></li>
-    </ul>
-
-    <div id="doc" onclick="fAbreGuias2()"><h2>Certidões Eleitorais<input type="checkbox" name="check" id="check"></h2></div>
-    <ul id="conteudo2"> 
-      <li>Certidão de Quitação Eleitoral<input type="checkbox" name="check" id="check"></li>
-      <li>Certidão de Crimes Eleitorais<input type="checkbox" name="check" id="check"></li>
-    </ul>
-    
-
-    <div id="doc" onclick="fAbreGuias3()"><h2>Certidões Estaduais<input type="checkbox" name="check" id="check"></h2></div>
-    <ul id="conteudo3">  
-        <li>Certidão de Distribuição Cível<input type="checkbox" name="check" id="check"></li>
-        <li>Certidão Criminal Estadual<input type="checkbox" name="check" id="check"></li>
-        <li>Certidão de Execução Criminal-SAJ<input type="checkbox" name="check" id="check"></li>
-        <li>Certidão de Execução Criminal SIVEC<input type="checkbox" name="check" id="check"></li>
-    </ul>
-
-    <div id="doc" onclick="fAbreGuias4()"><h2>Certidões Federais<input type="checkbox" name="check" id="check"></h2></div>
-    <ul id="conteudo4">
-        <li>1ªCertidão da Justiça Federal<input type="checkbox" name="check" id="check"></li>
-        <li>2ªCertidão da Justiça Federal<input type="checkbox" name="check" id="check"></li>
-        <li>2ªCertidão da Justiça Federal<input type="checkbox" name="check" id="check"></li>
-    </ul>
-
-    <div id="doc" onclick="fAbreGuias5()"><h2>Outras Certidões<input type="checkbox" name="check" id="check"></h2></div> 
-     <div id="conteudo5"> 
-        <li><input type="checkbox" name="check" id="check"></li>
-        <li><input type="checkbox" name="check" id="check"></li>
-        <li><input type="checkbox" name="check" id="check"></li>
+    <main>
+    <div class="doc"><h2>Documentos pessoais</h2><input type="checkbox" name="check1" id="check1"></div>
+    <div class="conteudo">
+        <p>Certidão de nascimento <input type="checkbox" name="check" id="check"></p>
+        <p>Rg e CPF<input type="checkbox" name="check" id="check"></p>
+        <p>Comprovante de residência<input type="checkbox" name="check" id="check"></p>
+        <p>Título de eleitor<input type="checkbox" name="check" id="check"></p>
+        <p>Certidão de casamento<input type="checkbox" name="check" id="check"></p>
     </div>
 
-    <div id="doc" onclick="fAbreGuias6()"><h2>Certidões de Protesto<input type="checkbox" name="check" id="check"></h2></div>
-     <ul id="conteudo6">   
-        <li><input type="checkbox" name="check" id="check"></li>
-        <li><input type="checkbox" name="check" id="check"></li>
-        <li><input type="checkbox" name="check" id="check"></li>
-     </ul>
-    
+    <div class="doc"><h2>Certidões Eleitorais</h2><input type="checkbox" name="check1" id="check1"></div>
+    <div class="conteudo">
+        <p>Certidão de Quitação Eleitoral<input type="checkbox" name="check" id="check"></p>
+        <p>Certidão de Crimes Eleitorais <input type="checkbox" name="check" id="check"></p>
+    </div> 
+
+    <div class="doc"><h2>Certidões Estaduais</h2></div>
+    <div class="conteudo">   
+        <p>Certidão de Distribuição Cível</p>
+        <p>Certidão Criminal Estadual</p>
+        <p>Certidão de Execução Criminal-SAJ</p>
+        <P>Certidão de Execução Criminal SIVEC</P>
+    </div>
+
+    <div class="doc"><h2>Certidões Federais</h2></div>
+     <div class="conteudo">   
+        <p>1ªCertidão da Justiça Federal</p>
+        <p>2ªCertidão da Justiça Federal</p>
+
+    </div>
+
+    <div class="doc"><h2>Outras Certidões</h2></div>
+     <div class="conteudo">  
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <div class="doc"><h2>Certidões de Protesto </h2></div>
+     <div class="conteudo">  
+        <p></p>
+        <p></p>
+        <p></p>
+    </div> 
+    </main>
     
 
  <script>
+    var doc = document.getElementsByClassName("#doc");
 
-         function fAbreGuias1(){
-    var vGuias = document.getElementById('conteudo');
-        if (vGuias.style.display === "block"){ // if vGuias hidden, display it 
-            vGuias.style.display = "none";
-        }
-        else{ // if vGuias displayed, hidden it
-            vGuias.style.display = "block";
-        }
-    }
-    function fAbreGuias2(){
-    var vGuias2 = document.getElementById('conteudo2');
-        if (vGuias2.style.display === "block"){ // if vGuias hidden, display it 
-            vGuias2.style.display = "none";
-        }
-        else{ // if vGuias displayed, hidden it
-            vGuias2.style.display = "block";
-        }
-    }
-    function fAbreGuias3(){
-    var vGuias3 = document.getElementById('conteudo3');
-        if (vGuias3.style.display === "block"){ // if vGuias hidden, display it 
-            vGuias3.style.display = "none";
-        }
-        else{ // if vGuias displayed, hidden it
-            vGuias3.style.display = "block";
-        }
-    }
-    function fAbreGuias4(){
-    var vGuias4 = document.getElementById('conteudo4');
-        if (vGuias4.style.display === "block"){ // if vGuias hidden, display it 
-            vGuias4.style.display = "none";
-        }
-        else{ // if vGuias displayed, hidden it
-            vGuias4.style.display = "block";
-        }
-    }
-    function fAbreGuias5(){
-    var vGuias5 = document.getElementById('conteudo5');
-        if (vGuias5.style.display === "block"){ // if vGuias hidden, display it 
-            vGuias5.style.display = "none";
-        }
-        else{ // if vGuias displayed, hidden it
-            vGuias5.style.display = "block";
-        }
-    }
-    function fAbreGuias6(){
-    var vGuias6 = document.getElementById('conteudo6');
-        if (vGuias6.style.display === "block"){ // if vGuias hidden, display it 
-            vGuias6.style.display = "none";
-        }
-        else{ // if vGuias displayed, hidden it
-            vGuias6.style.display = "block";
-        }
-    }
+    doc.addEventListener("click", function() {
 
-   
+    var div = document.getElementsByClassName("#conteudo");
+    
+    if(div.style.display == "none") {
+        div.style.display = "block";
+    } else {
+        div.style.display = "none";
+    }
+    }
+    );
  </script>
 
 </body>

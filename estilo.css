@@ -1,6 +1,90 @@
-ul#guias{display :none;}
-ul#guias li {
-    display: block;
+@charset "UTF-8";
+
+/*Importando as fontes do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Indie+Flower&family=Lobster&family=Pacifico&family=Roboto:ital,wght@0,400;0,700;1,400&family=Shadows+Into+Light&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
 
+/*Váriaveis das cores e fontes*/
+:root {
+    --cor01:rgb(188, 179, 247);
+    --cor02:rgb(219, 68, 223);
+    --cor03:rgb(161, 84, 230);
+    --cor04:rgb(171, 194, 248);
+    --cor05:rgb(250, 250, 250);
+    --fonte01:'Abril Fatface', cursive;
+    --fonte02:'Alfa Slab One', cursive;
+    --fonte03:'Indie Flower', cursive;
+    --fonte04:'Lobster', cursive;
+    --fonte05:'Pacifico', cursive;
+    --fonte06:'Roboto', sans-serif;
+    --fonte07:'Shadows Into Light', cursive;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--cor04), var(--cor03), var(--cor02), var(--cor01));
+}
+
+nav{
+    background-color: var(--cor03);
+    padding: 10px;
+    margin: 0px,0px;
+    text-align: right;
+}
+
+nav > p {
+    color: var(--cor05);
+
+}
+
+header{
+    background-color: var(--cor03);
+    padding-top: 30px;
+    min-height: 150px;
+    padding: 10px;
+    margin: 0px,0px;
+    text-align: center;
+}
+
+#logo1{
+    color: var(--cor04);
+    font-family: var(--fonte04);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.24);
+    font-size: 2.0em;
+}
+
+#logo2{
+    color: var(--cor02);
+    font-family: var(--fonte04);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.24);
+    font-size: 2.0em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.op_menu{
+    padding: 10px;
+    margin:auto;
+    background-color: var(--cor05);
+    text-align: center;
+    width: 400px;
+    border-radius: 8px;
+    margin-bottom:10px ;
+}
+
+#op_login{
+    text-align: center;
+}
+
+#img{
+    text-align: center;
+}
