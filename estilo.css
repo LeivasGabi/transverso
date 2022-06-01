@@ -93,11 +93,9 @@ img{
 
 
 #centroH2{
-
-text-align: center;
-
-
+    text-align: center;
 }
+
 #menu{
     width: 50px;
     position: absolute;
@@ -107,7 +105,8 @@ text-align: center;
 #sino{
     width: 50px;
     position: absolute;
-    left: 95%;
+    left: 89%;
 }
+
 
 
