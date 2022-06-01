@@ -96,3 +96,16 @@ text-align: center;
 
 
 }
+#menu{
+    width: 50px;
+    position: absolute;
+    left: 2%;
+}
+
+#sino{
+    width: 50px;
+    mask-position: absolute;
+    left: 95%;
+}
+
+
