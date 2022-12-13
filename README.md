@@ -1,3 +1,2 @@
 # transverso
-projeto do curso de sistemas para internet do IFRS cadeira de connstrução de páginas na web.
-Este projeto foi descontinuado.
+este nao foi o projeto final, mas guardo com muito carinho e saudade todos os rascunhos do meu amigo Bernardo
